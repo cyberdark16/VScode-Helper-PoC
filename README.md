@@ -2,7 +2,7 @@
 
 Remote administration tool for VS Code. Provides system command execution through VS Code extension.
 
-![VS Code Helper](screenshots/extension.png)
+![VS Code Helper](extension.png)
 
 ---
 
