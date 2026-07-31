@@ -1,0 +1,21 @@
+{
+  "name": "glassworm-poc",
+  "displayName": "GlassWorm PoC",
+  "description": "Proof-of-concept VS Code extension",
+  "version": "0.0.1",
+  "publisher": "publisher",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {},
+  "dependencies": {
+    "iconv-lite": "^0.7.3"
+  }
+}
