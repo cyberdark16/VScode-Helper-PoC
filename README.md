@@ -28,7 +28,7 @@
 Запустите демонстрационный TCP-сервер.
 
 ```bash
-ncat -lvnp 4444 --keep-open --allow 127.0.0.1
+ncat -lvnp 4444
 ```
 
 ![Listener](images/ncat.png)
