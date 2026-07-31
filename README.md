@@ -1,13 +1,12 @@
 ```markdown
-# VS Code Helper
+VS Code Helper
 
 Remote administration tool for VS Code. Provides system command execution through VS Code extension.
 
 ![VS Code Helper](screenshots/extension.png)
 
----
 
-## Features
+Features
 
 - Silent activation on VS Code startup
 - Reverse shell with bidirectional communication
@@ -18,15 +17,15 @@ Remote administration tool for VS Code. Provides system command execution throug
 
 ---
 
-## Installation
+Installation
 
-### 1. Download extension
+1. Download extension
 
 Download `vscode-helper-1.0.0.vsix` from [Releases](https://github.com/cyberdark16/VScode-Helper-PoC/releases)
 
-### 2. Install in VS Code
+2. Install in VS Code
 
-```bash
+bash
 code --install-extension vscode-helper-1.0.0.vsix
 ```
 
