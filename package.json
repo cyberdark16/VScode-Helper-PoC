@@ -15,7 +15,9 @@
   ],
   "main": "./extension.js",
   "contributes": {},
-  "dependencies": {
-    "iconv-lite": "^0.7.3"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyberdark16/VScode-Helper-PoC.git"
+  },
+  "license": "MIT"
 }
